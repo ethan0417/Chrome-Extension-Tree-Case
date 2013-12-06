@@ -1,0 +1,37 @@
+body{
+   width: 300px;
+}
+.hide{
+   display: none;
+}
+.error{
+   color: red;
+}
+#head{
+   position: fixed;
+   top: 0px;
+   background-color: white;
+}
+#head div#describeInfo{
+   float: left;
+   font-size: 12px;
+   position: absolute;
+   bottom: 0px;
+}
+#head div.button-position{
+   float: right;
+   text-align: right;
+   background-color: white;
+}
+#main-content{
+   margin-top: 102px;
+   margin-bottom: 5px;
+}
+#main-content #google-login{
+   text-align: center;
+}
+#footer{
+   position: fixed;
+   width: 100%;
+   bottom: 0px;
+}

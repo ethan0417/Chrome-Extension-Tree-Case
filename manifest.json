@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "EPA ",
+  "version": "2.0.0",
+  "description": "提供環保署輸入電子郵件，可快速勾選並自動填入。",
+  "permissions": [
+      "tabs",
+      "http://*.google.com/*",
+      "https://*.google.com/*",
+      "http://mail.google.com/*", 
+      "https://mail.google.com/*", 
+      "http://docs.google.com/*", 
+      "https://docs.google.com/*", 
+      "http://drive.google.com/*", 
+      "https://drive.google.com/*",
+      "http://0.docs.google.com/*",
+      "https://0.docs.google.com/*",
+      "http://epadev.micloud.tw/*",
+      "https://epadev.micloud.tw/*",
+      "http://charles.my.micloud.tw:3000/*"
+  ],
+  "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+  },
+  "background": {
+      "page": "background.html"
+  },
+  "browser_action": {
+      "default_title": "MiCloud Google Supports",
+      "default_icon": "images/icon16.png",
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [
+      {
+         "matches": [
+            "<all_urls>"
+         ],
+         "js": [
+            "javascripts/jquery/jquery.js",
+            "javascripts/contentScript.js"
+         ]
+      }
+  ]
+}
