@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "EPA ",
-  "version": "2.0.0",
-  "description": "提供環保署輸入電子郵件，可快速勾選並自動填入。",
+  "name": "Your extension name",
+  "version": "1.0.0",
+  "description": "Your extension description.",
   "permissions": [
       "tabs",
       "http://*.google.com/*",
@@ -14,10 +14,7 @@
       "http://drive.google.com/*", 
       "https://drive.google.com/*",
       "http://0.docs.google.com/*",
-      "https://0.docs.google.com/*",
-      "http://epadev.micloud.tw/*",
-      "https://epadev.micloud.tw/*",
-      "http://charles.my.micloud.tw:3000/*"
+      "https://0.docs.google.com/*"
   ],
   "icons": {
       "16": "images/icon16.png",
